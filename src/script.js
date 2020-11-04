@@ -36,8 +36,22 @@ function displayTemperature(response){
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search(city) {
 let apiKey = "aed57f2386376dd257ae589f54ccdbfe"
-let city = "Kufstein"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
 axios.get(apiUrl).then(displayTemperature);
+
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+
+
+search("Kufstein");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
