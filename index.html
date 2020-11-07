@@ -12,6 +12,16 @@
 <body>
     <div class="container">
         <div class="weather-app-wrapper">
+            <div class="overview">
+                <h1 id="city">
+                </h1>
+                <ul>
+                    <li><span id="date"></span>
+                    </li>
+                    <li id="description">
+                    </li>
+                </ul>
+            </div>
         <div class="weather-app">
             <form id="search-form" class="mb-3">
                 <div class="row">
@@ -19,20 +29,10 @@
                 <input type="search" placeholder="Type a city..." class="form-controll" id="city-input" autocomplete="off"/>
          </div>
                 <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-primary w-100"/>
+                <input type="submit" value="Search" class="btn btn-primary w-60"/>
       </div>
             </div>   
         </form>
-            <div class="overview">
-        <h1 id="city">
-        </h1>
-        <ul>
-            <li> Last updated: <span id="date"></span>
-            </li>
-            <li id="description">
-            </li>
-        </ul>
-        </div>
         <div class="row">
             <div class="col-6">
                 <div class="clearfix weather-temperature">
@@ -56,25 +56,12 @@
                     <li>
                         Wind: <span id="wind"></span>km/h
                     </li>
+
                 </ul>
             </div>
         </div>
         </div>
         <div class="row weather-forecast" id="forecast">
-            <div class="col-2">
-                <h3>
-                    7:00
-                </h3>
-                <img src="http://openweathermap.org/img/wn/02d@2x.png">
-                <div class="weather-forecast-temperature">
-                    <strong>
-                        15°
-                    </strong>
-                    
-                    15°
-                   
-                </div>
-            </div>
             <div class="col-2">
                 <h3>
                     10:00
@@ -146,6 +133,7 @@
                 </div>
             </div>
         </div>
+        <br>
         <small>
             <a href="https://github.com/CorneliaMoser/cornelias-shecodes-projekt" target="_blank">Open-source code</a> by
             Cornelia Moser
