@@ -9,6 +9,7 @@ h1 {
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  margin-top: 20px;
 }
 
 ul {
@@ -32,6 +33,10 @@ li::first-letter {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  border: 2px solid white;
+  padding: 15px;
+  max-width: 600px;
+  border-radius: 5px;
 }
 
 .weather-app {
@@ -101,12 +106,16 @@ li::first-letter {
   margin-top: 10px;
 }
 
-.weather-app .btn {
+.btn {
   background-color: grey;
   border-color: indianred;
   border-width: 3px;
 }
-.weather-app input {
+input {
   border-color: indianred;
   border-width: 3px;
+}
+
+.footer {
+  text-align: center;
 }
