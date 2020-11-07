@@ -95,14 +95,9 @@ li::first-letter {
   font-weight: 400;
   height: auto;
   line-height: 15px;
+  white-space: nowrap;
 }
 
 .weather-forecast {
   margin-top: 10px;
-}
-
-.row {
-  display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
 }
